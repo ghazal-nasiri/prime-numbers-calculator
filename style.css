@@ -34,6 +34,7 @@ h1 {
     margin-bottom: 15px;
     border-bottom: 1px solid #122620;
     padding-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 p {
@@ -81,7 +82,7 @@ p {
 .text {
     text-align: center;
     margin: 15px;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 /* Modal Box */
