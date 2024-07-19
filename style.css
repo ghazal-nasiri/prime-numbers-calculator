@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "KosugiMaru";
+    src: url(KosugiMaru-Regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "KosugiMaru", sans-serif;
+}
+
+:root {
+    font-size: 18px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #ffc0cb;
+    background: linear-gradient(45deg, #D6AD60, #F4EBD0);
+    color: #122620;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PrimeNumberCalculator {
+    width: min(90%, 450px);
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #122620;
+    padding-bottom: 10px;
+}
+
+p {
+    margin: 25px 0 15px;
+}
+
+.group {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #122620;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.group input {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    color: #122620;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+}
+
+.group input::placeholder {
+    color: rgba(18, 38, 32, .8);
+}
+
+.group button {
+    width: 200px;
+    height: auto;
+    border: none;
+    font-weight: bold;
+    background-color: #B68D40;
+    color: #122620;
+    border-left: 2px solid #122620;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.text {
+    text-align: center;
+    margin: 15px;
+    font-size: .9rem;
+}
+
+/* Modal Box */
+.modal-box-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.modal-box {
+    width: min(90%, 400px);
+    text-align: center;
+    line-height: 25px;
+    padding: 10px;
+    min-height: 150px;
+    font-weight: bold;
+    font-size: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #B68D40;
+    border-radius: 20px;
+    border-top: 7px solid #122620;
+    transition: all .3s;
+}
+
+.modal-box.open {
+    top: 50%;
+}
+
+@media screen and (min-width : 1500px) {
+    :root {
+        font-size: 25px;
+    }
+
+    .PrimeNumberCalculator {
+        width: min(90%, 650px);
+        margin: 0 auto;
+    }
+
+    .modal-box {
+        width: min(90%, 500px);
+    }
+}
