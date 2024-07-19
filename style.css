@@ -34,7 +34,7 @@ h1 {
     margin-bottom: 15px;
     border-bottom: 1px solid #122620;
     padding-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 p {
@@ -83,6 +83,7 @@ p {
     text-align: center;
     margin: 15px;
     font-size: .8rem;
+    line-height: 1.1rem;
 }
 
 /* Modal Box */
@@ -122,6 +123,12 @@ p {
 
 .modal-box.open {
     top: 50%;
+}
+
+@media screen and (min-width : 1200px) {
+    :root {
+        font-size: 22px;
+    }
 }
 
 @media screen and (min-width : 1500px) {
